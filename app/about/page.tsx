@@ -112,7 +112,7 @@ export default function AboutPage() {
             >
               <DoodleIcon
                 name={value.icon}
-                className="w-12 h-12 text-caramel shrink-0"
+                className="w-12 h-12 text-ink shrink-0"
               />
               <div>
                 <h3 className="font-display font-bold text-xl mb-2">
@@ -127,7 +127,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-20 text-center">
-          <p className="font-hand text-3xl text-caramel -rotate-1 mb-6">
+          <p className="font-hand text-3xl text-ink -rotate-1 mb-6">
             the best way to hear the rest is over coffee
           </p>
           <Link

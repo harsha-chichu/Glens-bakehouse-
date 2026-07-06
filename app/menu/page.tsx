@@ -40,7 +40,7 @@ export default function MenuPage() {
             <div className="flex flex-col items-center text-center gap-2 mb-8">
               <DoodleIcon
                 name={category.icon}
-                className={`w-14 h-14 text-caramel ${
+                className={`w-14 h-14 text-ink ${
                   index % 2 === 0 ? "-rotate-3" : "rotate-3"
                 }`}
               />
@@ -59,7 +59,7 @@ export default function MenuPage() {
                     <h3 className="font-display font-bold text-lg sm:text-xl shrink-0">
                       {item.name}
                       {item.signature && (
-                        <span className="ml-2 inline-block font-hand text-base text-paper bg-caramel px-2 py-0.5 rounded-sm -rotate-2 align-middle">
+                        <span className="ml-2 inline-block font-hand text-base text-paper bg-ink px-2 py-0.5 rounded-sm -rotate-2 align-middle">
                           house favourite
                         </span>
                       )}
@@ -68,7 +68,7 @@ export default function MenuPage() {
                       className="flex-1 border-b-2 border-dotted border-ink/30 translate-y-[-4px]"
                       aria-hidden="true"
                     />
-                    <span className="font-hand text-2xl text-caramel shrink-0">
+                    <span className="font-hand text-2xl text-ink shrink-0">
                       {item.price}
                     </span>
                   </div>
@@ -95,7 +95,7 @@ export default function MenuPage() {
         <p className="text-ink-soft mt-3 max-w-lg mx-auto">
           Custom cakes, dessert tables and bulk orders are our happy place.
           Call us at{" "}
-          <a href={site.phoneHref} className="text-caramel underline">
+          <a href={site.phoneHref} className="text-ink underline">
             {site.phone}
           </a>{" "}
           or drop by — we&rsquo;ll sketch something up together.

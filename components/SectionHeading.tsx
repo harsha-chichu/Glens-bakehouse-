@@ -16,7 +16,7 @@ export default function SectionHeading({
   return (
     <div className={`flex flex-col ${alignCls} gap-3 mb-10 sm:mb-14`}>
       {eyebrow && (
-        <p className="font-hand text-2xl sm:text-3xl text-caramel -rotate-1">
+        <p className="font-hand text-2xl sm:text-3xl text-ink-soft -rotate-1">
           {eyebrow}
         </p>
       )}

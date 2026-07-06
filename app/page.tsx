@@ -46,7 +46,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-paper/30 via-paper/55 to-paper" />
         <div className="relative z-10 flex flex-col items-center text-center px-4 py-24">
-          <p className="font-hand text-2xl sm:text-3xl text-caramel -rotate-2 mb-4">
+          <p className="font-hand text-2xl sm:text-3xl text-ink -rotate-2 mb-4">
             est. Bengaluru &middot; fresh out of the oven daily
           </p>
           <h1 className="text-ink">
@@ -105,19 +105,19 @@ export default function Home() {
               tilt={i % 2 === 0 ? "-rotate-1" : "rotate-1"}
               className="p-6 flex flex-col items-center text-center gap-3 hover:-translate-y-1 transition-transform"
             >
-              <DoodleIcon name={item.icon} className="w-14 h-14 text-caramel" />
+              <DoodleIcon name={item.icon} className="w-14 h-14 text-ink" />
               <h3 className="font-display font-bold text-xl">{item.name}</h3>
               <p className="text-sm text-ink-soft leading-relaxed flex-1">
                 {item.description}
               </p>
-              <p className="font-hand text-2xl text-caramel">{item.price}</p>
+              <p className="font-hand text-2xl text-ink">{item.price}</p>
             </DoodleFrame>
           ))}
         </div>
         <div className="mt-10 text-center">
           <Link
             href="/menu"
-            className="font-hand text-2xl text-caramel squiggle-underline hover:text-caramel-dark transition-colors"
+            className="font-hand text-2xl text-ink squiggle-underline hover:text-ink-soft transition-colors"
           >
             see the whole menu →
           </Link>
@@ -206,7 +206,7 @@ export default function Home() {
           className="object-cover opacity-10 invert"
         />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 py-20 flex flex-col items-center text-center gap-5">
-          <DoodleIcon name="mappin" className="w-12 h-12 text-butter" />
+          <DoodleIcon name="mappin" className="w-12 h-12 text-paper" />
           <h2 className="font-display font-bold text-3xl sm:text-5xl">
             Come Say Hello
           </h2>
@@ -217,7 +217,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="sketch-btn bg-butter text-ink px-8 py-3.5 font-hand text-2xl mt-2"
+            className="sketch-btn bg-paper text-ink px-8 py-3.5 font-hand text-2xl mt-2"
           >
             Plan your visit
           </Link>

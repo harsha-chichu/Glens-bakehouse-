@@ -24,7 +24,7 @@ export default function ContactPage() {
         <DoodleFrame tilt="-rotate-1" className="p-7 flex gap-5 items-start">
           <DoodleIcon
             name="mappin"
-            className="w-12 h-12 text-caramel shrink-0"
+            className="w-12 h-12 text-ink shrink-0"
           />
           <div>
             <h2 className="font-display font-bold text-xl mb-2">Where</h2>
@@ -45,7 +45,7 @@ export default function ContactPage() {
         </DoodleFrame>
 
         <DoodleFrame alt tilt="rotate-1" className="p-7 flex gap-5 items-start">
-          <DoodleIcon name="clock" className="w-12 h-12 text-caramel shrink-0" />
+          <DoodleIcon name="clock" className="w-12 h-12 text-ink shrink-0" />
           <div>
             <h2 className="font-display font-bold text-xl mb-2">When</h2>
             {site.hours.map(({ days, time }) => (
@@ -55,14 +55,14 @@ export default function ContactPage() {
                 <span className="text-ink font-medium">{time}</span>
               </p>
             ))}
-            <p className="font-hand text-xl text-caramel mt-3 -rotate-1">
+            <p className="font-hand text-xl text-ink mt-3 -rotate-1">
               croissants sell out by noon &mdash; you&rsquo;ve been warned
             </p>
           </div>
         </DoodleFrame>
 
         <DoodleFrame alt tilt="rotate-1" className="p-7 flex gap-5 items-start">
-          <DoodleIcon name="phone" className="w-12 h-12 text-caramel shrink-0" />
+          <DoodleIcon name="phone" className="w-12 h-12 text-ink shrink-0" />
           <div>
             <h2 className="font-display font-bold text-xl mb-2">Call or write</h2>
             <p className="text-ink-soft">
@@ -70,13 +70,13 @@ export default function ContactPage() {
             </p>
             <a
               href={site.phoneHref}
-              className="block mt-2 text-ink font-medium hover:text-caramel transition-colors"
+              className="block mt-2 text-ink font-medium hover:text-ink-soft transition-colors"
             >
               {site.phone}
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="block mt-1 text-ink font-medium hover:text-caramel transition-colors"
+              className="block mt-1 text-ink font-medium hover:text-ink-soft transition-colors"
             >
               {site.email}
             </a>
@@ -89,7 +89,7 @@ export default function ContactPage() {
         <DoodleFrame tilt="-rotate-1" className="p-7 flex gap-5 items-start">
           <DoodleIcon
             name="instagram"
-            className="w-12 h-12 text-caramel shrink-0"
+            className="w-12 h-12 text-ink shrink-0"
           />
           <div>
             <h2 className="font-display font-bold text-xl mb-2">Follow along</h2>

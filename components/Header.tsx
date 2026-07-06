@@ -15,7 +15,7 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 flex items-center justify-between h-20">
         <Link
           href="/"
-          className="text-ink hover:text-caramel transition-colors"
+          className="text-ink hover:text-ink-soft transition-colors"
           onClick={() => setOpen(false)}
         >
           <Logo className="text-[1.7rem]" />
@@ -30,8 +30,8 @@ export default function Header() {
                 href={href}
                 className={`font-hand text-2xl transition-colors ${
                   active
-                    ? "text-caramel squiggle-underline"
-                    : "text-ink hover:text-caramel"
+                    ? "text-ink squiggle-underline"
+                    : "text-ink-soft hover:text-ink"
                 }`}
               >
                 {label}
@@ -75,8 +75,8 @@ export default function Header() {
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
-                className={`font-hand text-3xl py-2 ${
-                  active ? "text-caramel" : "text-ink"
+                className={`font-hand text-3xl py-2 w-fit ${
+                  active ? "text-ink squiggle-underline" : "text-ink-soft"
                 }`}
               >
                 {label}

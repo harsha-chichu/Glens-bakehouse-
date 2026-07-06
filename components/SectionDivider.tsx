@@ -25,7 +25,7 @@ function Squiggle({ className = "" }: { className?: string }) {
 /** Hand-drawn wavy divider with an optional doodle icon in the middle. */
 export default function SectionDivider({
   icon,
-  className = "text-caramel",
+  className = "text-ink-soft",
 }: {
   icon?: DoodleIconName;
   className?: string;
