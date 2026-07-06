@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Ink-on-paper doodle palette */
+  --color-paper: #faf5ec;
+  --color-paper-warm: #f3ebdc;
+  --color-ink: #211d19;
+  --color-ink-soft: #55493d;
+  --color-caramel: #8b5e34;
+  --color-caramel-dark: #6f4a27;
+  --color-butter: #e9c46a;
+
+  --font-display: var(--font-playfair);
+  --font-hand: var(--font-caveat);
+  --font-body: var(--font-lora);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body), Georgia, serif;
+}
+
+/* Hand-drawn wobbly border — uneven radii make straight CSS borders look inked */
+.sketch-border {
+  border: 2px solid var(--color-ink);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.sketch-border-alt {
+  border: 2px solid var(--color-ink);
+  border-radius: 15px 255px 15px 225px / 225px 15px 255px 15px;
+}
+
+.sketch-btn {
+  border: 2px solid var(--color-ink);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transition: transform 150ms ease, box-shadow 150ms ease,
+    background-color 150ms ease, color 150ms ease;
+}
+
+.sketch-btn:hover {
+  transform: translate(-2px, -2px) rotate(-0.5deg);
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+}
+
+/* Wavy hand-drawn underline */
+.squiggle-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8' viewBox='0 0 40 8'%3E%3Cpath d='M0 5 Q 5 1 10 5 T 20 5 T 30 5 T 40 5' fill='none' stroke='%238b5e34' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center 100%;
+  background-size: 40px 8px;
+  padding-bottom: 12px;
+}
+
+/* Subtle paper grain overlay */
+.paper-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.11 0 0 0 0 0.1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
